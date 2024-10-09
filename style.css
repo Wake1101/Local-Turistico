@@ -1,5 +1,5 @@
+/* CSS Reset */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
@@ -8,103 +8,123 @@
 
 :root {
     font-family: 'Open Sans', sans-serif;
+    line-height: 120%;
+}
+
+/* main structure */
+body {
+    background-color: #f5f4f0;
     color: #333;
 }
 
 #page {
-    margin: 88px auto;
-    max-width: 1120px;
+    width: 1120px;
+    margin: 120px auto 89px;
+    box-sizing: border-box;
 }
 
-#page img {
+img {
     width: 100%;
     border-radius: 28px;
-    height: 660px;
 }
 
-#page main img {
-    max-height: 350px;
-    object-fit: cover;
+.divider {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 1px;
+    margin: 36px 0;
 }
 
+/* text */
+
+h1,
+h2,
 h3 {
-    color: #E1624F;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-h1, h2 {
     color: #1B1B1B;
 }
 
 h1 {
-    margin: 8px 0 44px;
     font-size: 36px;
-}
-
-#page img + p {
-    margin: 24px 0 44px;
-    font-style: italic;
-    text-align: center;
-}
-
-.divider{
-    border: 1px solid #D9D9D9;
-}
-
-main h3 {
-    margin: 64px 0 2px;
+    line-height: 49px;
+    margin: 8px 0 44px;
 }
 
 h2 {
-    margin-bottom: 4px;
+    font-size: 32px;
+    line-height: 44px;
+    margin: 2px 0 8px;
 }
 
-main > p {
+h3 {
+    font-size: 28px;
+    line-height: 38px;
+    margin: 20px 0 4px;
+}
+
+.headline {
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #E1624F;
+}
+
+.subtitle {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: center;
+    font-style: italic;
+}
+
+main h2 + p {
     margin-bottom: 64px;
 }
 
-section img {
-    margin-bottom: 20px;
+main div img {
+    height: 350px;
+    object-fit: cover;
+    margin-top: 44px;
 }
 
-section p {
-    margin-bottom: 38px;
-}
 ul {
-    margin-bottom: 48px;
-}
-
-ul li{
-    margin-left: 10px;
+    padding-left: 24px;
     font-weight: 700;
 }
 
-#history {
-    color: #0C51A7;
-}
-
-#couple {
-    color: #591B98;
-}
-
-#family {
-    color: #E5245E;
-}
-
-#budget {
-    color: #E95E10;
+ul li::marker {
+    color: #333333;
 }
 
 .divider + p {
-    margin-top: 40px;
+    text-align: center;
 }
 
 footer {
     text-align: center;
-    margin-bottom: 48px;
+    padding-bottom: 41px;
+    line-height: 150%;
+    font-family: "Alice", serif;
 }
 
 footer img {
+    width: 16px;
+    height: 16px;
     vertical-align: middle;
 }
+
+.accent-blue {
+    color: #0C51A7;
+}
+
+.accent-purple {
+    color: #591B98;
+}
+
+.accent-pink {
+    color: #E5245E;
+}
+
+.accent-orange {
+    color: #E95E10;
+}
+
+
